@@ -3,9 +3,8 @@ def add_everything_up(a, b):
         c = a + b
         return round(c, 3)
     except TypeError:
-        if type(a) != type(b):
-            c = str(a) + str(b)
-            return c
+        c = str(a) + str(b)
+        return c
 
 print(add_everything_up(123.456, 'строка'))
 print(add_everything_up('яблоко', 4215))
